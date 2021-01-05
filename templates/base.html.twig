@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <!--=============== basic  ===============-->
+    <meta charset="UTF-8">
+    <title>{% block title %}Brassart Florian - Mon portfolio{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="index, follow"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <!--=============== css  ===============-->
+    {% block stylesheets %}{
+    <link type="text/css" rel="stylesheet" href="css/plugins.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/color.css">
+    <!--=============== favicons ===============-->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    {% endblock %}
+</head>
+
+<body>
+    {% block body %}
+    <!-- loader --
+        <div class="loader">
+            <div class="loading-text-container "><span class="loading-text">Chargement<strong>...</strong></span> <span class="loader_count">0</span></div>
+            <div class="loader-anim"></div>
+            <div class="loader-anim2 color-bg"></div>
+        </div>
+         loader  end-->
+    <!-- main start  -->
+    <div id="main">
+        <!-- header-->
+        <header class="main-header">
+            <!-- logo  -->
+            <a href="/" class="ajax logo-holder"><img src="images/logo.png" alt=""></a>
+            <!-- logo end -->
+            <!-- nav-button-wrap-->
+            <div class="nav-button but-hol">
+                <span  class="ncs"></span>
+                <span class="nos"></span>
+                <span class="nbs"></span>
+                <div class="menu-button-text">Menu</div>
+            </div>
+            <!-- nav-button-wrap end-->
+            <!-- header-contacts-->
+            <div class="header-contacts">
+                <ul>
+                    <li><span>01. Téléphone </span> <a href="tel:+4(897)56412322">+33 749144998</a></li>
+                    <li><span>02. Mail </span> <a href="mailto:theside@domain.com">florian.brassart.pro@gmail.com</a></li>
+                </ul>
+                <a href="contacter" class="ajax contacts-btn">Me contacter</a>
+            </div>
+            <!-- header-contacts end-->
+        </header>
+        <!-- header end-->
+        <!-- left-header-->
+        <aside class="left-header">
+            <span class="lh_dec color-bg"></span>
+            <div class="left-header_social">
+                <ul >
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- left-header end-->
+        <!-- share button-->
+        <div class="share-btn showshare color-bg"><span>Partage<i class="fal fa-plus"></i></span></div>
+        <!-- share button end-->
+        <!-- right header-->
+        <div class="hc_dec_color">
+            <div class="page-subtitle"><span></span></div>
+        </div>
+        <!-- right header end-->
+        <!-- wrapper  -->
+        <div id="wrapper">
+            <!-- navigation menu-->
+            <div class="nav-holder">
+                <div class="nav-holder-wrap but-hol">
+                    <div class="nav-container fl-wrap">
+                        <!-- nav -->
+                        <nav class="nav-inner" id="menu">
+                            <ul>
+                                <li><a href="/" class="act-link">l'acccueil</a>
+                                <li><a href="/apropos" class="ajax">Qui suis-je ?</a></li>
+                                <li><a href="/portfolio">Mon portfolio</a></li>
+                                <li><a href="/contacter" class="ajax">Me contacter</a></li>
+                                <li><a href="/blog" class="ajax">Mon Blog</a></li>
+
+                                <li>
+                                    <a href="#">Autres pages (test)</a>
+                                    <!--level 2 -->
+                                    <ul>
+                                        <li><a href="portfolio.html" class="ajax">Horizonatal</a></li>
+                                        <li><a href="portfolio3.html" class="ajax">Fullscreen Grid </a></li>
+                                        <li><a href="portfolio2.html" class="ajax">Column Grid</a></li>
+                                        <li><a href="portfolio4.html" class="ajax">Column Grid 2</a></li>
+                                        <li>
+                                            <a href="#">Single</a>
+                                            <!--level 3 -->
+                                            <ul>
+                                                <li><a href="portfolio-single.html" class="ajax">Style 1</a></li>
+                                                <li><a href="portfolio-single2.html" class="ajax">Style 2</a></li>
+                                                <li><a href="portfolio-single3.html" class="ajax">Style 3</a></li>
+                                                <li><a href="portfolio-single4.html" class="ajax">Style 4</a></li>
+                                                <li><a href="portfolio-single5.html" class="ajax">Style 5</a></li>
+                                                <li><a href="index.html" class="ajax">Slider</a></li>
+                                                <li><a href="index2.html" class="ajax">Carousel</a></li>
+                                                <li><a href="index3.html" class="ajax">Slideshow</a></li>
+                                                <li><a href="index4.html" class="ajax">Video</a></li>
+                                                <li><a href="index5.html" class="ajax">Image</a></li>
+                                            </ul>
+                                            <!--level 3 end -->
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- nav end-->
+                    </div>
+                    <div class="nav-footer"><span>&#169; Florian brassart 2020  /  tout droit reserver. </span></div>
+                    <div class="nav-holder-wrap_line"></div>
+                    <div class="nav-holder-wrap_dec"></div>
+                </div>
+            </div>
+            <div class="nav-overlay"></div>
+            <!-- navigation menu end  -->
+            {% block contenu %}  {% endblock %}
+            <!-- share-wrapper-->
+            <div class="share-wrapper">
+                <div class="close-share-btn"><i class="fal fa-long-arrow-left"></i></div>
+                <div class="share-container fl-wrap  isShare"></div>
+            </div>
+            <!-- share-wrapper  end -->
+        </div>
+        <!-- wrapper end -->
+        <!-- cursor-->
+        <div class="element">
+            <div class="element-item"></div>
+        </div>
+        <!-- cursor end-->
+    </div>
+    <!-- Main end -->
+    {% block javascripts %}
+    <!--=============== scripts  ===============-->
+    <script   src="js/jquery.min.js"></script>
+    <script   src="js/plugins.js"></script>
+    <script   src="js/scripts.js"></script>
+    {% endblock %}
+</body>
+{% endblock %}
+</html>

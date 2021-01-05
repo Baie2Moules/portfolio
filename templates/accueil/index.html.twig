@@ -1,0 +1,166 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccueilController!{% endblock %}
+
+{% block contenu %}
+    {%if session.login is not defined %}
+
+        <!-- content-->
+        <div class="content full-height" data-pagetitle="Vous êtes sur l'accueil">
+            <div class="fl-wrap full-height hero-conatiner">
+                <div class="hero-wrapper fl-wrap full-height hidden-item">
+                    <span class="hc_dec"></span>
+                    <!-- fs-slider-wrap  -->
+                    <!-- hero-slider-wrap -->
+                    <div class="hero-slider-wrap home-half-slider fl-wrap full-height">
+                        <div class="hero-slider fs-gallery-wrap fl-wrap full-height">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper" >
+                                    <!-- swiper-slide-->
+                                    <div class="swiper-slide">
+                                        <div class="half-hero-wrap">
+                                            <div class="hhw_header">Bienvenue sur mon site</div>
+                                            <h1>Brassart FLorian<br><span> Développeur web</span> et Designer<br> Made in <span>France</span></h1>
+                                            <h4>Je suis un passionné d’informatique, <br>un communicant avec un très bon relationnel, <br>commercial et disponible immédiatement.</h4>
+                                            <div class="clearfix"></div>
+                                            <a href="/apropos" class="btn ajax  fl-btn color-bg"><span>Mes services</span></a>
+                                        </div>
+                                    </div>
+                                    <!-- swiper-slide end-->
+                                    <!-- swiper-slide-->
+                                    <div class="swiper-slide">
+                                        <div class="half-hero-wrap">
+                                            <div class="hhw_header">Ma motivation, c’est votre satisfaction.</div>
+                                            <h1>Je rend le digital<br><span>accessible</span> à toutes les<br> entreprises.</h1>
+                                            <h4>Depuis maintenant plus de 2 ans, J'ai le plaisir d’accompagner les jeunes entreprises,<br> PME et grands groupes dans la stratégie et<br> la mise en place de leurs projets sur le web. </h4>
+                                            <div class="clearfix"></div>
+                                            <a href="/apropos" class="btn ajax  fl-btn color-bg"><span>Mes compétences</span></a>
+                                        </div>
+                                    </div>
+                                    <!-- swiper-slide end-->
+                                    <!-- swiper-slide-->
+                                    <div class="swiper-slide">
+                                        <div class="half-hero-wrap">
+                                            <div class="hhw_header">Ma vision</div>
+                                            <h1>Le <span>développement</span>, <br>c’est avant tout un<br><span>état d’esprit</span>. </h1>
+                                            <h4>C’est l’écoute de chaque projet, chaque contrainte, chaque objectif. <br>Mais aussi aller chercher les solutions<br> les plus simples aux problèmes les plus complexes.</h4>
+                                            <div class="clearfix"></div>
+                                            <a href="/portfolio" class="btn  ajax  fl-btn color-bg"><span>Mes travaux</span></a>
+                                        </div>
+                                    </div>
+                                    <!-- swiper-slide end-->
+                                    <!-- swiper-slide-->
+                                    <div class="swiper-slide">
+                                        <div class="half-hero-wrap">
+                                            <div class="hhw_header">le digital est un domaine d’avenir.</div>
+                                            <h1>Vous avez un projet,<br> et si l’on en <span>discutait</span><br> autour d'un <span>café</span> ?</h1>
+                                            <h4>Je suis déjà impatients à l’idée de vous connaître, <br>afin de me challenger sur un nouveau projet ! <br> je vous propose soit de planifier un appel,<br> soit de m'envoyer votre brief.</h4>
+                                            <div class="clearfix"></div>
+                                            <a href="/contacter" class="btn ajax  fl-btn color-bg"><span>Me contacter</span></a>
+                                        </div>
+                                    </div>
+                                    <!-- swiper-slide end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hero-slider-wrap  end-->
+                    <!-- hero-slider-img-->
+                    <div class="hero-slider-img hero-slider-wrap_halftwo hidden-item">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper" >
+                                <!-- swiper-slide-->
+                                <div class="swiper-slide">
+                                    <div class="bg"  data-bg="images/bg/moi.png" data-swiper-parallax="20%"></div>
+                                    <div class="overlay"></div>
+                                </div>
+                                <!-- swiper-slide end-->
+                                <!-- swiper-slide-->
+                                <div class="swiper-slide">
+                                    <div class="bg"  data-bg="images/bg/creations.jpg" data-swiper-parallax="20%"></div>
+                                    <div class="overlay"></div>
+                                </div>
+                                <!-- swiper-slide end-->
+                                <!-- swiper-slide-->
+                                <div class="swiper-slide">
+                                    <div class="bg"  data-bg="images/bg/esprit.jpg" data-swiper-parallax="20%"></div>
+                                    <div class="overlay"></div>
+                                </div>
+                                <!-- swiper-slide end-->
+                                <!-- swiper-slide-->
+                                <div class="swiper-slide">
+                                    <div class="bg"  data-bg="images/bg/contacter.jpg" data-swiper-parallax="20%"></div>
+                                    <div class="overlay"></div>
+                                </div>
+                                <!-- swiper-slide end-->
+                            </div>
+                        </div>
+                        <div class="hero-corner-dec"></div>
+                        <div class="hero-corner-dec2"></div>
+                    </div>
+                    <!-- hero-slider-img  end-->
+                    <!-- slider-controls -->
+                    <div class="slider-progress-bar">
+                                <span>
+                                    <svg class="circ" width="50" height="50">
+                                        <circle class="circ2" cx="25" cy="25" r="23" stroke="rgba(255,255,255,0.4)" stroke-width="1" fill="none"/>
+                                        <circle class="circ1" cx="25" cy="25" r="23" stroke="#fff" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </span>
+                    </div>
+                    <div class="clone-counter">
+                        <div class="current">01</div>
+                    </div>
+                    <div class="swiper-counter hs_counter">
+                        <div class="current">01</div>
+                        <div class="total"></div>
+                    </div>
+                    <div class="hero-slider_control-wrap">
+                        <div class="hsc hsc-prev"><span><i class="fal fa-angle-left"></i></span> </div>
+                        <div class="hsc hsc-next"><span><i class="fal fa-angle-right"></i></span></div>
+                    </div>
+                    <!-- slider-controls end-->
+                    <a href="/apropos" class="ajax start-btn"><span> Découvrir mon univers <i class="fal fa-long-arrow-right"></i></span></a>
+                    <div class="play-pause_slider hsc_pp auto_actslider"><i class="fas fa-play"></i></div>
+                </div>
+                <!-- hero-container end-->
+                <div class="hero-decor-numb"><span>50.2936597  </span><span>2.7819547 </span> <a href="https://www.google.com.ua/maps/" target="_blank" class="hero-decor-numb-tooltip">Développe sur Arras</a></div>
+                <div class="hero-slider-wrap_pagination"></div>
+                <div class="hero-scroll-down-notifer">
+                    <div class="scroll-down-wrap ">
+                        <div class="mousey">
+                            <div class="scroller"></div>
+                        </div>
+                    </div>
+                    <i class="far fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+        <!-- content end -->
+    {% else %}
+        <h1 class="h3 mb-3 font-weight-normal">Vous êtes connecté sur le tableau de bord</h1>
+        {%if session.role == 1 %}
+            <div class="panel">
+                <div class="panel-heading background-violet">En tant qu'administrateur vous avez accès à :</div>
+                <div class="panel-body violet">
+                    <ul>
+                        <li><a href="index.php?page=utilisateur" class="violet">Gestion des utilisateurs</a></li>
+                        <li><a href="index.php?page=equipe" class="violet">Gestion des équipes</a></li>
+                        <li><a href="index.php?page=entreprise" class="violet">Gestion des entreprises</a></li>
+                    </ul>
+                </div>
+            </div>
+        {% else %}
+            <div class="panel">
+                <div class="panel-heading background-violet">En tant qu'utilisateur vous avez accès à :</div>
+                <div class="panel-body violet">
+                    <ul>
+                        <li><a href="index.php?page=tache" class="violet">Gestion de vos projets et tâches assignées</a></li>
+                        <li><a href="index.php?page=projet"class="violet">Liste des projets en cours</a></li>
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
+
+    {% endif %}
+{% endblock %}

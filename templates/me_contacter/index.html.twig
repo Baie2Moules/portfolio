@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Me contacter {% endblock %}
+
+{% block contenu %}
+    <!-- navigation menu end  -->
+    <div class="content full-height no-mob-hidden2" data-pagetitle="Contacts">
+        <div class="content-inner">
+            <div class="content-front">
+                <div class="cf-inner">
+                    <div class="contact-details-title fl-wrap">
+                        <h2>Mes coodonnées</h2>
+                    </div>
+                    <div class="contact-details fl-wrap">
+                        <ul>
+                            <li><span>01. Adresse mail :</span><a href="#" target="_blank">florian.brassart.pro@gmail.com</a></li>
+                            <li><span>02. Location :</span><a href="#" target="_blank">Arras</a></li>
+                            <li><span>03. Téléphone :</span><a href="#">+33 749144998</a> , <a href="#">+33 749144998</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn fl-btn color-bg show_contact-form"><span>Me dire bonjour</span></a>
+                    <div class="aside-show_cf show_contact-form"><i class="fal fa-envelope"></i></div>
+                </div>
+            </div>
+            <div class="content-back">
+                <div class="hidden-contact_form-wrap_inner">
+                    <div class="close-contact_form cnt-anim"><i class="fal fa-times"></i></div>
+                    <div class="contact-details-title fl-wrap">
+                        <h2>Formulaire de contacte</h2>
+                    </div>
+                    <div id="contact-form" class="fl-wrap">
+                        <div id="message"></div>
+                        <form  class="custom-form" action="php/contact.php" name="contactform" id="contactform">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" name="name" id="name" placeholder="Nom et prenom *" value=""/>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text"  name="email" id="email" placeholder="Adresse mail *" value=""/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <input type="text"  name="email" id="email" placeholder="Votre budget *" value=""/>
+                                </div>
+                                </div>
+
+                                <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Votre projet:" class="cnt-anim"></textarea>
+                                <button class="btn fl-btn color-bg" id="submit"><span>Envoyer</span> </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <div id="map-single" class="map" data-latlog="[50.2874222 , 2.7808556]" data-popuptext="My Location in New York ."></div>
+        </div>
+        <div class="main_social">
+            <span class="main-social-title">Find on:</span>
+            <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- share-wrapper-->
+    <div class="share-wrapper">
+        <div class="close-share-btn"><i class="fal fa-long-arrow-left"></i></div>
+        <div class="share-container fl-wrap  isShare"></div>
+    </div>
+    <!-- share-wrapper  end -->
+    </div>
+    <!-- wrapper end -->
+    <!-- cursor-->
+    <div class="element">
+        <div class="element-item"></div>
+    </div>
+    <!-- cursor end-->
+    </div>
+{% endblock %}
