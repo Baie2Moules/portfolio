@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="876ef4ad-fd8a-4546-a126-87e54beac56f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/portfolio/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portfolio/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/qui_suis_je/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/qui_suis_je/index.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="876ef4ad-fd8a-4546-a126-87e54beac56f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,8 +158,16 @@
       <workItem from="1607897992051" duration="601000" />
       <workItem from="1609807874039" duration="109000" />
       <workItem from="1609810999067" duration="17000" />
-      <workItem from="1609889810176" duration="6962000" />
+      <workItem from="1609889810176" duration="7380000" />
     </task>
+    <task id="LOCAL-00001" summary="portfolio update">
+      <created>1609898442252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609898442252</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +184,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="portfolio update" />
+    <option name="LAST_COMMIT_MESSAGE" value="portfolio update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
